@@ -27,7 +27,16 @@ const handleSubmenuClick = (e, name) => {
         </div>
 
         <button className='hamburger d-lg-none'
-        onClick={()=>isOpen(!open)}>
+        onClick={() => {
+    isOpen(!open);
+    if(open) { // if we are closing the menu
+      setDropdownOpen(false); // close main dropdown
+      setSubmenuOpen(null);   // close any submenu
+    }
+  }}
+
+          
+        >
           <i className="fa fa-bars" style={{ fontSize: "28px" }}></i>
         </button>
 
