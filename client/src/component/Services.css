@@ -1,0 +1,116 @@
+.oth-ser{
+    position: relative;
+ 
+    background-image: url('/images/sky5.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;   
+     width: 100vw;
+       height: 35vh; 
+   background-position: center;
+}
+
+.oth-ser::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color:  rgba(170, 164, 164, 0.5);
+    
+}
+
+.oth-ser h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  position: absolute;
+  top: 13%;
+
+  z-index: 2;   
+}
+
+.oth-ser h1{
+  margin-left: 25%;
+}
+@media (min-width:768px) {
+  .oth-ser h1{
+  margin-left: 37%;
+}
+}
+
+.ser-lef{
+  margin-left: 10%;
+}
+@media (min-width:768px) {
+  .ser-lef{
+  margin-left: 2%;
+}
+}
+
+.a-img{
+ 
+
+  width: 44%
+ 
+}
+@media (min-width:768px) {
+  .a-img{
+margin-left: 2%;
+width: 50%;
+margin-right: 3%;
+}
+}
+
+.gal-wid {
+width: 100%;
+margin-left: 0%;
+
+  height: 440px;
+
+  cursor: pointer;
+}
+@media (min-width:768px) {
+.gal-wid {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+}
+.g-mar {
+ margin-left: 2%;
+ margin-right:2% ;
+}
+@media (min-width:768px) {
+.g-mar {
+  margin-left:10%;
+ margin-right: 4%;
+}
+}
+.c-abo {
+ margin-left: 23%;
+ width: 55%;
+
+}
+@media (min-width:768px) {
+.c-abo {
+ margin-left: 2%;
+ width: 10%;
+}
+}
+
+.g-wid {
+width: 44%;
+}
+@media (min-width:768px) {
+.g-wid {
+  width: 100%;
+}
+}
+.ser-top{
+  margin-top: -65px;
+}
+@media (min-width:768px) {
+.ser-top{
+  margin-top: -50px;
+}
+}

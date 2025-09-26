@@ -1,0 +1,73 @@
+
+.my-btn {
+  /*font-family: Lato; */   
+    font-size: 18px;
+  color: white;            
+  margin-left: 1rem;        
+}
+
+.f-wid{
+    width: 130%;
+    height: 100px;
+
+  }
+@media (min-width:768px) {
+  .f-wid{
+    width: 40%;
+   
+  }
+}
+.p-wid{
+    margin-top: 20%;
+
+  }
+@media (min-width:768px) {
+  .p-wid{
+  margin-top: 1%;
+   
+  }
+}
+.c-wid{
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+@media (min-width:768px) {
+  .c-wid{
+ width: 35%;
+   margin-top: 2%;
+  margin-right: 4%;
+  }
+}
+.con-mt{
+  margin-top: 1%;
+  font-size: 30px;
+  }
+@media (min-width:768px) {
+  .con-mt{
+margin-top: 7%;
+ font-size: 40px;
+  }
+}
+.c-text{
+text-align: left;
+  }
+@media (min-width:768px) {
+  .c-text{
+text-align: center;
+  }
+}
+
+.f-map{
+  
+width: 87%;
+margin-top: 6%;
+margin-left: 5%;
+}
+@media (min-width:768px) {
+  .f-map{
+width: 35%;
+margin-top: 4%;
+margin-left: 5%;
+}
+}

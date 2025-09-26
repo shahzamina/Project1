@@ -1,0 +1,98 @@
+.form input{
+    /*font-family: Lato; */
+padding: 18px;
+border-radius: 5px;
+border: none;
+margin-top:3%;
+
+}
+.form input{
+    width: 80%;
+    font-family: Lato;
+  }
+@media (min-width:768px) {
+  .form input{
+    width: 40%;
+  }
+}
+.ser-wid{
+    width: 80%;
+ 
+  }
+@media (min-width:768px) {
+  .ser-wid{
+    width: 40%;
+  }
+}
+.form{
+    width: 140%;
+   margin-top: 5%;
+    margin-left: 10%;
+}
+.form textarea{
+ width: 82%;
+ height: 100px;
+    margin-top:5%;
+    padding: 18px;
+    margin-left:1%;
+      /*font-family: Lato; */
+    border-radius: 5px;
+}
+
+@media (min-width:768px) {
+.form textarea{
+margin-left: 9%;
+}
+}
+
+.btn5{
+    background-color: white;
+    border: none;
+transition: color 0.5 ease;
+font-family: Lato;
+}
+.btn5:hover{
+    color:  rgb(18, 150, 184) ;
+    transform: scale(1.1);
+}
+.selected-services {
+  font-family: Lato;
+  white-space: nowrap;   /* ✅ keeps it in one line */
+  overflow: hidden;      /* ✅ hides if too long */
+  text-overflow: ellipsis; /* ✅ adds ... if too long */
+}
+.small-checkbox {
+  
+  height: 15px !important;
+  cursor: pointer;
+}
+.con{
+     margin: 0 auto;
+}
+@media (min-width:768px) {
+  .con{
+      margin-left: 5%;
+     padding-right: 10%;
+}
+}
+
+.btn-wid{
+    width: 50%;
+   margin-left: 3%;
+  }
+@media (min-width:768px) {
+  .btn-wid{
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+.m-wid{
+    width: 98%;
+   margin-left: 15%;
+  }
+@media (min-width:768px) {
+  .m-wid{
+    width: 100%;
+    margin-left: 35%;
+  }
+}

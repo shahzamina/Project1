@@ -1,0 +1,112 @@
+.ser-head p{
+padding: 3px;
+
+margin-top:3px;
+font-family:Lato;
+word-spacing: 3px;
+}
+.ser-head h3{
+    margin-top: 50px;
+    text-align: center;
+    /*font-family: Lato; */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ser{
+
+  margin-top: 2%;
+    margin-left: 5%;
+}
+.ser p{
+    margin-left: 1px;
+    margin-right: 8%;
+    word-spacing: 5%;
+    line-height: 30px;
+}
+.image-container {
+  position: relative;
+  overflow: hidden; /* ensures ray doesn't overflow image */
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%; /* start completely off to the right */
+  width: 50%; /* size of the ray */
+  height: 200%; /* make it diagonal */
+  background: rgba(255, 255, 255, 0.3); /* semi-transparent white */
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+  pointer-events: none;
+  opacity: 0; /* invisible by default */
+}
+
+.image-container:hover::after {
+  left: -70%; /* slide from right to left across image */
+  opacity: 1; /* visible on hover */
+}
+.det-wid {
+width: 100%;
+margin-left: 0%;
+margin-top: 5%;
+
+}
+@media (min-width:768px) {
+.det-wid {
+  width: 100%;
+  margin-left: 5%;
+}
+}
+.d-wid {
+width: 100%;
+margin-left: 0%;
+
+
+}
+@media (min-width:768px) {
+.d-wid {
+  width: 100%;
+ 
+}
+}
+.w-ser {
+
+margin-left: 4%;
+padding-right: 5%;
+
+}
+@media (min-width:768px) {
+.w-ser {
+ margin-left: 5%;
+ padding-right: 10%;
+ 
+}
+}
+.wid-ser {
+
+margin-left: 4%;
+margin-right: 5%;
+
+}
+@media (min-width:768px) {
+.wid-ser {
+ margin-left: 6%;
+ padding-right: 10%;
+ 
+}
+}
+
+
+.serdt{
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+@media (min-width:768px) {
+.serdt{
+  margin-left: 10%;
+}
+
+
+}

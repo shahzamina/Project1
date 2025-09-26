@@ -1,0 +1,298 @@
+.home{
+ margin-top: -90px;
+    background-image: url('/images/home2.jpg');
+    background-repeat: no-repeat;
+     background-size: cover;   
+     width: 65vw;
+        height: 650px; 
+   background-position: center;
+   }
+
+@media (min-width:768px) {
+.home{
+ height: 100px; 
+}
+}
+
+@media (min-width:992px) {
+.home{
+height: 100vh; 
+}
+}
+
+
+.home::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* transparent black */
+}
+
+
+.home-content{
+  width: 100vw;
+    position: relative;
+     z-index: 2; /* makes text appear above overlay */
+  
+}
+.home-content h2{
+color: #fff;
+margin-top: 36%;
+text-align: center;
+font-weight: 25px;
+font-size: 30px;
+max-lines: 30%;
+}
+
+@media (min-width:768px) {
+.home-content h2{
+  margin-top: 15%;
+  font-size: 40px;
+}
+}
+@media (min-width:992px) {
+.home-content h2{
+  font-size: 40px;
+}
+}
+
+
+.home-content h2 span{
+  align-items: center;
+  font-size: 18px;
+}
+
+@media (min-width:768px) {
+.home-content h2 span{
+  font-size: 25px;
+}
+}
+
+@media (min-width:992px) {
+.home-content h2 span{
+  font-size: 30px;
+}
+}
+
+
+
+.home-content  p{
+  
+    color: white;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 13px;
+
+    
+}
+
+@media (min-width:768px) {
+.home-content p{
+  font-size: 20px;
+}
+}
+
+@media (min-width:992px) {
+.home-content p{
+  font-size: 20px;
+}
+}
+
+.btn2 {
+  position: relative;
+  border: none;
+  background-color:white ; /* teal default */
+  width: 15%;
+  border-radius: 4px;
+
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  color:  rgb(18, 150, 184); /* text color always white */
+  z-index: 1;
+}
+
+/* black overlay layer */
+.btn2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;       /* start hidden on left */
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: left 0.4s ease;
+  z-index: 0;        /* sit above teal but below text */
+}
+
+/* ensure text stays above overlay */
+.btn2 span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn2:hover::before {
+  left: 0;           /* slide in overlay */
+}
+.btn2:hover{
+  color:white ;
+
+}
+
+.carousel-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Left and right positions */
+.carousel-icon.left {
+   position: absolute;
+  left: 30px;
+}
+
+.carousel-icon.right {
+   position: absolute;
+  right: 50px; /* changed from 96% to right */
+}
+
+/* Small screens adjustments */
+@media (max-width: 767px) {
+  .carousel-icon {
+     position: absolute;
+    font-size: 20px;
+  }
+  .carousel-icon.left {
+    position: absolute;
+    left: 1px;
+  }
+  .carousel-icon.right {
+    
+     position: absolute;
+    right: 22px;
+  }
+}
+.w-card{
+  width: 75%;
+  margin-top: 4%;
+}
+
+@media (min-width:768px) {
+.w-card{
+  width: 28%;
+  margin-top: 0%;
+}
+}
+.cards{
+  position: absolute;
+width: 80%;
+  top: 53%;
+  margin-left: 10%;
+}
+
+@media (min-width:768px) {
+.cards{
+  position: absolute;
+  top: 58%;
+  width: 70%;
+}
+}
+
+.d-image{
+  margin-top: 10%;
+  margin-left: 10%;
+
+  width: 80%;
+  height: 10%;
+}
+
+@media (min-width:768px) {
+.d-image{
+ width: 30%;
+ margin-top: 4%;
+  margin-left: 32%;
+height: 25%;
+}
+}
+
+.d-par{
+
+ padding: 5%;
+ margin-left: 7%;
+ line-height: 25px;
+color: white;
+ margin-right: 7%;
+text-align: justify;
+word-spacing: 1px;
+}
+
+@media (min-width:768px) {
+.d-par{
+  
+
+margin-top: 0%;
+color: white;
+margin-bottom: 10%;
+font-size: 17px;
+
+}
+}
+.pre{
+ margin-left:3%
+}
+@media (min-width:768px) {
+.pre{
+ 
+margin-left:0%;
+}
+}
+
+
+.car-back-img{
+     background-repeat: no-repeat;
+     background-size: cover; 
+     background-position: center;
+     margin-top: 10%;
+     height: 800px;
+     width: 100%;
+}
+@media (min-width:768px) {
+  .car-back-img{
+      margin-top: 3%;
+      height: 500px;
+  }
+}
+
+.car-back-img::after{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+     width: 100%;
+  background-color: rgba(7, 7, 7, 0.5); /* transparent black */
+}
+.car-back-img i{
+  color: white;
+}
+
+
+
+@media (min-width:768px) {
+  .mis-left{
+ margin-left: 5%;
+  box-shadow:0px 2px 4px   rgb(18, 150, 184);
+}
+}
+@media (min-width:768px) {
+  .mis-right{
+ margin-right: 5%;
+  box-shadow:0px 2px 4px   rgb(18, 150, 184);
+}
+}

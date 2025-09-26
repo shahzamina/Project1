@@ -1,0 +1,228 @@
+.Dyn-nav{
+  display: flex;
+  flex-direction: row;
+
+ 
+
+  height: auto;
+  display: flex;
+  gap: 10%;
+  justify-content: space-around;
+position: sticky;
+top: 0;
+left: 0;
+z-index: 1030;
+box-shadow: 0px 2px 4px rgb(18, 150, 184) ;
+}
+.dyn{
+    width: 100vw;
+}
+@media (min-width: 567px) {
+  .dyn{
+      width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .dyn{
+      width: 100vw;
+  }
+}
+@media (min-width: 992px) {
+  .dyn{
+      width: 100vw;
+  }
+}
+
+
+
+.nav-menu {
+  color: white !important;
+ 
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 20px;
+  /*font-family: Lato; */
+}
+.nav-menu li{
+    color:rgb(18, 150, 184) ;
+  transition: all 0.3s ease;
+}
+.nav-menu li:hover{
+ color:rgb(141, 181, 190);
+  transform: translateY(-3px);
+}
+.dropdown-menu{
+  box-shadow: 0px 1px 4px rgb(18, 150, 184);
+    border-radius: 1px;
+    padding-bottom: 0px;
+    border: none !important;
+    background-color: black;
+
+   
+}
+
+/* Nested dropdown submenu */
+
+.dropdown-menu li{
+ 
+   padding: 2px;
+}
+.dropdown-menu .dropdown-item:hover{
+ background-color: black !important;
+  color:white !important;
+}
+
+.style{
+    /*font-family: Lato; */
+    font-size: 13px;
+}
+/* Submenu wrapper */
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu .dropdown-item {
+  color: rgb(18, 150, 184) !important;     
+}
+
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0 !important;
+  left: 100% !important;   
+  right: auto !important;  
+  margin-top: 0;
+  margin-left: 0;
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  z-index: 1050;
+}
+
+
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+.menu{
+  display: block;
+}
+.menu.sopen {
+  
+
+  background: black;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  margin-left: 50%;
+  width: 50%;
+  padding: 15px;
+  z-index: 999;
+}
+
+.menu.lopen{
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .menu {
+    display: block !important;
+    position: static;
+    background: none;
+    padding: 0;
+  }
+}
+
+ .nav-img {
+    width: 100%;
+    height: 70px;
+    margin-left: 1%;
+  }
+/* Base style for xs screens (<567px) */
+@media (min-width: 768px) {
+.nav-img {
+  width: 15%;
+  height: auto;
+   margin-left: 0;
+}
+}
+
+/* Large screens ≥992px */
+@media (min-width: 992px) {
+  .nav-img {
+    width: 40%;
+    height: 70px;
+    margin-left: 5%;
+  }
+}
+/* Small screens ≥567px */
+@media (min-width: 567px) {
+  .nav-img {
+    width: 40%;
+    height: 70px;
+  }
+}
+
+
+/* Default: submenu opens to the left (for desktop) */
+.dropdown-submenu > .dropdown-menu {
+  left: -100%;
+  top: 0;
+}
+
+/* On small screens, force submenu to open below */
+@media (max-width: 768px) {
+  .dropdown-submenu > .dropdown-menu {
+    position: relative !important;
+    left: 0 !important;
+    top: 100% !important;
+    margin-top: 0.25rem;
+  }
+}
+.n-wid{
+    width: 40%;
+}
+@media (min-width: 567px) {
+  .n-wid{
+      width: 30%;
+  }
+}
+
+
+
+/* Main dropdown */
+.nav-item.dropdown > .dropdown-menu {
+    display: none;
+    position: absolute; /* float outside the navbar */
+    top: 100%;          /* right below parent link */
+    left: 0;
+    width: 250px;       /* adjust width */
+    z-index: 1050;      /* above other content */
+}
+
+.nav-item.dropdown.open > .dropdown-menu {
+  display: block;
+}
+
+@media (min-width:768px) {
+  .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+}
+
+.dropdown-submenu.open > .dropdown-menu {
+  display: block;
+}
+
+@media (min-width:768px) {
+  .dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+}
+
+
+
+
+
