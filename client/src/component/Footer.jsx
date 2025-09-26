@@ -23,22 +23,31 @@ user-friendly interface, enhance customer experiences, and boost your overall ef
             
       </div>
 
+<div className="f-map" style={{ position: 'relative', height: '330px' }}>
+  <iframe
+    title="Google Map"
+    src="https://maps.google.com/maps?q=33.5417561,73.1740364&z=15&output=embed"
+    className='m-wid mb-3 mymap w-ser'
+    height="330"
+    style={{ pointerEvents: 'none' }} // disable clicks on iframe
+    allowFullScreen={true}
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
 
-<div className='f-map' >
- <iframe
- 
-            title="Google Map"
-            src="https://maps.google.com/maps?q=33.5417561,73.1740364&z=15&output=embed"
-          
-            className='m-wid mb-3 mymap w-ser'
-          
-            height="330"
-            
-            allowFullScreen={true}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe> 
+  <div
+    onClick={() => window.open('https://maps.google.com/maps?q=33.5417561,73.1740364&z=15', '_blank')}
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      cursor: 'pointer'
+    }}
+  />
 </div>
+
 
 
       <div className='c-wid mb-5' >
