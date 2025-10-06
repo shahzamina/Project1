@@ -28,19 +28,10 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Hamburger menu (mobile) */}
-      <button
-        className="hamburger d-lg-none"
-        onClick={() => {
-          setOpen(!open);
-          if (open) {
-            setDropdownOpen(false);
-            setSubmenuOpen(null);
-          }
-        }}
-      >
-        <i className="fa fa-bars" style={{ fontSize: '28px' }}></i>
-      </button>
+        <button className='hamburger d-lg-none'
+        onClick={()=>isOpen(!open)}>
+          <i className="fa fa-bars" style={{ fontSize: "28px" }}></i>
+        </button>
 
       <div className={`me-5 menu ${open ? 'sopen' : 'lopen'}`}>
         <ul className="navbar-nav d-flex flex-lg-row gap-lg-5 nav-menu">
