@@ -1,117 +1,84 @@
-.Dyn-nav{
+/* === Navbar Base === */
+.Dyn-nav {
   display: flex;
   flex-direction: row;
-
- 
-
   height: auto;
-  display: flex;
   gap: 10%;
   justify-content: space-around;
-position: sticky;
-top: 0;
-left: 0;
-z-index: 1030;
-box-shadow: 0px 2px 4px rgb(18, 150, 184) ;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  box-shadow: 0px 2px 4px rgb(18, 150, 184);
+  background: transparent;
 }
-.dyn{
+
+.dyn {
+  width: 100vw;
+}
+
+/* === Responsive Widths === */
+@media (min-width: 567px),
+(min-width: 768px),
+(min-width: 992px) {
+  .dyn {
     width: 100vw;
+  }
 }
+
+/* === Logo === */
+.nav-img {
+  width: 100%;
+  height: 70px;
+  margin-left: 1%;
+}
+
 @media (min-width: 567px) {
-  .dyn{
-      width: 100vw;
+  .nav-img {
+    width: 40%;
+    height: 70px;
   }
 }
 
 @media (min-width: 768px) {
-  .dyn{
-      width: 100vw;
+  .nav-img {
+    width: 15%;
+    height: auto;
+    margin-left: 0;
   }
 }
+
 @media (min-width: 992px) {
-  .dyn{
-      width: 100vw;
+  .nav-img {
+    width: 40%;
+    height: 70px;
+    margin-left: 5%;
   }
 }
 
-
-
-.nav-menu {
-  color: white !important;
- 
-  margin-top: 4%;
-  margin-bottom: 4%;
-  font-size: 20px;
-  /*font-family: Lato; */
-}
-.nav-menu li{
-    color:rgb(18, 150, 184) ;
-  transition: all 0.3s ease;
-}
-.nav-menu li:hover{
- color:rgb(141, 181, 190);
-  transform: translateY(-3px);
-}
-.dropdown-menu{
-  box-shadow: 0px 1px 4px rgb(18, 150, 184);
-    border-radius: 1px;
-    padding-bottom: 0px;
-    border: none !important;
-    background-color: black;
-
-   
+.n-wid {
+  width: 40%;
 }
 
-/* Nested dropdown submenu */
-
-.dropdown-menu li{
- 
-   padding: 2px;
-}
-.dropdown-menu .dropdown-item:hover{
- background-color: black !important;
-  color:white !important;
+@media (min-width: 567px) {
+  .n-wid {
+    width: 30%;
+  }
 }
 
-.style{
-    /*font-family: Lato; */
-    font-size: 13px;
-}
-/* Submenu wrapper */
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu > .dropdown-menu .dropdown-item {
-  color: rgb(18, 150, 184) !important;     
-}
-
-
-.dropdown-submenu > .dropdown-menu {
-  top: 0 !important;
-  left: 100% !important;   
-  right: auto !important;  
-  margin-top: 0;
-  margin-left: 0;
-  display: none;
-  position: absolute;
-  min-width: 200px;
-  z-index: 1050;
-}
-
-
-
+/* === Menu & Hamburger === */
 .hamburger {
   background: none;
   border: none;
   cursor: pointer;
   color: black;
 }
-.menu{
+
+.menu {
   display: block;
 }
-.menu.sopen {
-  
 
+.menu.sopen {
   background: black;
   position: absolute;
   top: 80px;
@@ -122,7 +89,7 @@ box-shadow: 0px 2px 4px rgb(18, 150, 184) ;
   z-index: 999;
 }
 
-.menu.lopen{
+.menu.lopen {
   display: none;
 }
 
@@ -135,103 +102,201 @@ box-shadow: 0px 2px 4px rgb(18, 150, 184) ;
   }
 }
 
- .nav-img {
-    width: 100%;
-    height: 70px;
-    margin-left: 1%;
-  }
-/* Base style for xs screens (<567px) */
-@media (min-width: 768px) {
-.nav-img {
-  width: 15%;
-  height: auto;
-   margin-left: 0;
-}
+/* === Nav Items === */
+.nav-menu {
+  color: white !important;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 20px;
 }
 
-/* Large screens ≥992px */
-@media (min-width: 992px) {
-  .nav-img {
-    width: 40%;
-    height: 70px;
-    margin-left: 5%;
-  }
-}
-/* Small screens ≥567px */
-@media (min-width: 567px) {
-  .nav-img {
-    width: 40%;
-    height: 70px;
-  }
+.nav-menu li {
+  color: rgb(18, 150, 184);
+  transition: all 0.3s ease;
 }
 
-
-/* Default: submenu opens to the left (for desktop) */
-.dropdown-submenu > .dropdown-menu {
-  left: -100%;
-  top: 0;
+.nav-menu li:hover {
+  color: rgb(141, 181, 190);
+  transform: translateY(-3px);
 }
 
-/* On small screens, force submenu to open below */
-@media (max-width: 768px) {
-  .dropdown-submenu > .dropdown-menu {
-    position: relative !important;
-    left: 0 !important;
-    top: 100% !important;
-    margin-top: 0.25rem;
-  }
-}
-.n-wid{
-    width: 40%;
-}
-@media (min-width: 567px) {
-  .n-wid{
-      width: 30%;
-  }
+/* === Dropdown Styling === */
+.dropdown-menu {
+  box-shadow: 0px 1px 4px rgb(18, 150, 184);
+  border-radius: 1px;
+  padding-bottom: 0;
+  border: none !important;
+  background-color: black;
 }
 
+.dropdown-menu li {
+  padding: 2px;
+}
 
+.dropdown-menu .dropdown-item:hover {
+  background-color: black !important;
+  color: white !important;
+}
 
-/* Main dropdown */
+/* === Hover Dropdown Behavior === */
 .nav-item.dropdown > .dropdown-menu {
-    display: none;
-    position: absolute; /* float outside the navbar */
-    top: 100%;          /* right below parent link */
-    left: 0;
-    width: 250px;       /* adjust width */
-    z-index: 1050;      /* above other content */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  background: black;
+  z-index: 1050;
 }
 
-.nav-item.dropdown.open > .dropdown-menu {
-  display: block;
-}
-
-@media (min-width:768px) {
+/* Show on hover (desktop only) */
+@media (min-width: 992px) {
   .nav-item.dropdown:hover > .dropdown-menu {
     display: block;
-}
-}
-
-.dropdown-submenu.open > .dropdown-menu {
-  display: block;
+  }
 }
 
-@media (min-width:768px) {
+/* === Submenu === */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: black;
+  width: 220px;
+  z-index: 1060;
+}
+
+/* Hover behavior for submenu (desktop only) */
+@media (min-width: 992px) {
   .dropdown-submenu:hover > .dropdown-menu {
-  display: block;
-}
+    display: block;
+  }
 }
 
+/* === Mobile Behavior === */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Hide by default */
+  .nav-item.dropdown > .dropdown-menu,
+  .dropdown-submenu > .dropdown-menu {
+    display: none;
+  }
+
+  /* Show when .open is toggled by React */
+  .nav-item.dropdown.open > .dropdown-menu,
+  .dropdown-submenu.open > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* === Dropdown Text === */
 .dropdown-item,
 .submenu-title,
 .dropdown-submenu > .dropdown-item,
 .dropdown-submenu > .submenu-title {
-  color: rgb(18, 150, 184) !important; /* same blue tone */
+  color: rgb(18, 150, 184) !important;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
-padding: 6%;
-  font-family: lato;
-  
+  padding: 6%;
+  font-family: Lato;
 }
 
+/* === Mobile Behavior (click open) === */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Hide by default */
+  .nav-item.dropdown > .dropdown-menu,
+  .dropdown-submenu > .dropdown-menu {
+    display: none;
+  }
+
+  /* Show when .open is added by React */
+  .nav-item.dropdown.open > .dropdown-menu,
+  .dropdown-submenu.open > .dropdown-menu {
+    display: block;
+  }
+
+  /* For better readability */
+  .dropdown-item,
+  .submenu-title {
+    padding-left: 20px;
+  }
+}
+/* Hover dropdown (for desktop) */
+@media (min-width: 992px) {
+  .navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Submenu layout */
+.dropdown-submenu {
+  position: relative;
+}
+
+
+/* Show dropdown when active */
+.dropdown-menu.show,
+.dropdown-submenu .dropdown-menu.show {
+  display: block;
+}
+
+
+/* === Default (mobile first) === */
+.dropdown-submenu .dropdown-menu {
+  display: none;
+  position: static; /* ✅ expands below for mobile */
+  padding-left: 0.5rem;
+  border-left: 2px solid #eee;
+}
+
+/* === When open on mobile (clicked in React) === */
+@media (max-width: 991px) {
+  .dropdown-submenu.open > .dropdown-menu {
+    display: block; /* ✅ show below when clicked */
+  }
+}
+
+/* === Desktop behavior (hover → open to the right) === */
+@media (min-width: 992px) {
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute;  /* ✅ open beside parent */
+    top: 0;
+    left: 100%;          /* or change to right: 100% if you want left side */
+    margin-top: 0;
+    background: black;
+    width: 220px;
+    z-index: 1060;
+  }
+
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block; /* ✅ show on hover */
+  }
+}

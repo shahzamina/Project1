@@ -3,21 +3,23 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [submenuOpen, setSubmenuOpen] = useState(null);
-
-  const handleSubmenuClick = (e, name) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setSubmenuOpen(submenuOpen === name ? null : name);
-  };
+  const [open, setOpen] = useState(false); // hamburger
+  const [dropdownOpen, setDropdownOpen] = useState(false); // Services main dropdown
+  const [subDropdownOpen, setSubDropdownOpen] = useState(null); // to track which submenu is open
 
   const handleLinkClick = () => {
-    // Close everything when user clicks a link
     setOpen(false);
     setDropdownOpen(false);
-    setSubmenuOpen(null);
+    setSubDropdownOpen(null);
+  };
+
+  // toggle hamburger
+  const toggleMenu = () => {
+    if (open) {
+      setDropdownOpen(false);
+      setSubDropdownOpen(null);
+    }
+    setOpen(!open);
   };
 
   return (
@@ -28,79 +30,163 @@ const Navbar = () => {
         </Link>
       </div>
 
-        <button className='hamburger d-lg-none'
-        onClick={()=>isOpen(!open)}>
-          <i className="fa fa-bars" style={{ fontSize: "28px" }}></i>
-        </button>
+      <button className="hamburger d-lg-none" onClick={toggleMenu}>
+        <i className="fa fa-bars" style={{ fontSize: '28px' }}></i>
+      </button>
 
       <div className={`me-5 menu ${open ? 'sopen' : 'lopen'}`}>
         <ul className="navbar-nav d-flex flex-lg-row gap-lg-5 nav-menu">
           <li className="nav-item">
-            <Link to="/" className="nav-link" onClick={handleLinkClick}>Home</Link>
+            <Link to="/" className="nav-link" onClick={handleLinkClick}>
+              Home
+            </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/about" className="nav-link" onClick={handleLinkClick}>About</Link>
+            <Link to="/about" className="nav-link" onClick={handleLinkClick}>
+              About
+            </Link>
           </li>
 
-          {/* Services Dropdown */}
+          {/* SERVICES DROPDOWN */}
           <li
             className={`nav-item dropdown ${dropdownOpen ? 'open' : ''}`}
-            onClick={() => setDropdownOpen(!dropdownOpen)}
+            onMouseEnter={() => window.innerWidth >= 992 && setDropdownOpen(true)}
+            onMouseLeave={() => window.innerWidth >= 992 && setDropdownOpen(false)}
           >
-            <span className="nav-link dropdown-toggle">Services</span>
+            <span
+              className="nav-link dropdown-toggle"
+              onClick={(e) => {
+                if (window.innerWidth < 992) {
+                  e.preventDefault();
+                  setDropdownOpen(!dropdownOpen);
+                }
+              }}
+            >
+              Services
+            </span>
 
-            <ul className="dropdown-menu w-50 p-0">
-              {/* uPVC Doors */}
-             <li className={`dropdown-submenu ${submenuOpen === 'doors' ? 'open' : ''}`}>
-  <span
-    className="dropdown-item submenu-title"
-    onClick={(e) => handleSubmenuClick(e, 'doors')}
-  >
-    uPVC Doors
-  </span>
-
-                <ul className="dropdown-menu">
+            <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
+              {/* uPVC DOORS */}
+              <li className="dropdown-submenu">
+                <span
+                  className="dropdown-item submenu-title"
+                  onClick={(e) => {
+                    if (window.innerWidth < 992) {
+                      e.preventDefault();
+                      setSubDropdownOpen(
+                        subDropdownOpen === 'doors' ? null : 'doors'
+                      );
+                    }
+                  }}
+                >
+                  uPVC Doors
+                </span>
+                <ul
+                  className={`dropdown-menu ${
+                    subDropdownOpen === 'doors' ? 'show' : ''
+                  }`}
+                >
                   <li>
-                    <Link to="/sdoor" className="dropdown-item" onClick={handleLinkClick}>Sliding Door</Link>
+                    <Link
+                      to="/sdoor"
+                      className="dropdown-item"
+                      onClick={handleLinkClick}
+                    >
+                      Sliding Door
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/gdoor" className="dropdown-item" onClick={handleLinkClick}>Openable Door</Link>
+                    <Link
+                      to="/gdoor"
+                      className="dropdown-item"
+                      onClick={handleLinkClick}
+                    >
+                      Openable Door
+                    </Link>
                   </li>
                 </ul>
               </li>
 
-              {/* uPVC Windows */}
-              <li
-                className={`dropdown-submenu ${submenuOpen === 'windows' ? 'open' : ''}`}
-                onClick={(e) => handleSubmenuClick(e, 'windows')}
-              >
-                <span className="dropdown-item submenu-title">uPVC Windows</span>
-                <ul className="dropdown-menu">
+              {/* uPVC WINDOWS */}
+              <li className="dropdown-submenu">
+                <span
+                  className="dropdown-item submenu-title"
+                  onClick={(e) => {
+                    if (window.innerWidth < 992) {
+                      e.preventDefault();
+                      setSubDropdownOpen(
+                        subDropdownOpen === 'windows' ? null : 'windows'
+                      );
+                    }
+                  }}
+                >
+                  uPVC Windows
+                </span>
+                <ul
+                  className={`dropdown-menu ${
+                    subDropdownOpen === 'windows' ? 'show' : ''
+                  }`}
+                >
                   <li>
-                    <Link to="/swin" className="dropdown-item" onClick={handleLinkClick}>Sliding Windows</Link>
+                    <Link
+                      to="/swin"
+                      className="dropdown-item"
+                      onClick={handleLinkClick}
+                    >
+                      Sliding Windows
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/gwin" className="dropdown-item" onClick={handleLinkClick}>Openable Windows</Link>
+                    <Link
+                      to="/gwin"
+                      className="dropdown-item"
+                      onClick={handleLinkClick}
+                    >
+                      Openable Windows
+                    </Link>
                   </li>
                 </ul>
               </li>
 
-              {/* Other Services */}
-              <li><Link to="/ven" className="dropdown-item" onClick={handleLinkClick}>uPVC Ventilator</Link></li>
-              <li><Link to="/sky" className="dropdown-item" onClick={handleLinkClick}>Glass Skylight</Link></li>
-              <li><Link to="/gstair" className="dropdown-item" onClick={handleLinkClick}>Glass Stairs Railing</Link></li>
-              <li><Link to="/grail" className="dropdown-item" onClick={handleLinkClick}>Glass Terrace Railing</Link></li>
-              <li><Link to="/scab" className="dropdown-item" onClick={handleLinkClick}>Glass Shower Cabins</Link></li>
+              <li>
+                <Link to="/ven" className="dropdown-item" onClick={handleLinkClick}>
+                  uPVC Ventilator
+                </Link>
+              </li>
+              <li>
+                <Link to="/sky" className="dropdown-item" onClick={handleLinkClick}>
+                  Glass Skylight
+                </Link>
+              </li>
+              <li>
+                <Link to="/gstair" className="dropdown-item" onClick={handleLinkClick}>
+                  Glass Stairs Railing
+                </Link>
+              </li>
+              <li>
+                <Link to="/grail" className="dropdown-item" onClick={handleLinkClick}>
+                  Glass Terrace Railing
+                </Link>
+              </li>
+              <li>
+                <Link to="/scab" className="dropdown-item" onClick={handleLinkClick}>
+                  Glass Shower Cabins
+                </Link>
+              </li>
             </ul>
           </li>
 
           <li className="nav-item">
-            <Link to="/gcom" className="nav-link" onClick={handleLinkClick}>Gallery</Link>
+            <Link to="/gcom" className="nav-link" onClick={handleLinkClick}>
+              Gallery
+            </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/cform" className="nav-link" onClick={handleLinkClick}>Contact</Link>
+            <Link to="/cform" className="nav-link" onClick={handleLinkClick}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
