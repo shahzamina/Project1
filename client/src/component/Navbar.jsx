@@ -57,7 +57,7 @@ const Navbar = () => {
     className="dropdown-item submenu-title"
     onClick={(e) => handleSubmenuClick(e, 'doors')}
   >
-    uPVC 
+    uPVC Doors
   </span>
 
                 <ul className="dropdown-menu">
