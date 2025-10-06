@@ -10,7 +10,7 @@ const Swin = () => {
 
       const head='uPVC SLIDING WINDOWS'
     const para='Our sliding glass windows combine elegance and functionality, offering smooth operation and effortless ventilation. Crafted with uPVC or Aluminium frames, they ensure durability, energy efficiency, and low maintenance while maximizing natural light and providing a modern, sleek look for any home or commercial space. Crafted with premium uPVC or aluminium frames, these windows are built to last offering exceptional durability, energy efficiency, and low maintenance. The sleek sliding mechanism ensures easy handling, while the minimalist design complements any interior or exterior style. Designed for smooth operation and effortless ventilation, they allow you to enjoy fresh air and natural light without compromising on style or performance.'
-    const img= '/images/sliwin.gif'
+    const img= '/images/sw3.gif'
      const p='Why Choose uPVC Sliding Windows from Window Innovationz uPVC Windows & Doors?'
  const h= [
   "Our uPVC sliding windows are engineered to keep your home comfortable year-round. The multi-chambered frame design and high-quality weatherstripping prevent drafts and heat loss, making them excellent insulators and helping reduce heating and cooling costs.",
