@@ -222,7 +222,16 @@ box-shadow: 0px 2px 4px rgb(18, 150, 184) ;
 }
 }
 
-
-
-
+.dropdown-item,
+.submenu-title,
+.dropdown-submenu > .dropdown-item,
+.dropdown-submenu > .submenu-title {
+  color: rgb(18, 150, 184) !important; /* same blue tone */
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+padding: 6%;
+  font-family: lato;
+  
+}
 

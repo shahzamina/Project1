@@ -102,7 +102,7 @@ const ch='Contact Form'
     <>
     <div className='home dyn position-relative' >
     <div className='home-content position-absolute mt-4'>
-      <h2 >Window Innovations Best Fabricated uPVC & Aluminium <br/><span > Windows Doors System</span></h2>
+      <h2 >Window Innovationz Best Fabricated uPVC & Aluminium <br/><span > Windows Doors System</span></h2>
       <p >Discover the perfect blend of style, durability, and energy efficiency with our uPVC and Aluminium windows doors system. Designed to enhance your living spaces, our products provide superior insulation, low maintenance, and long-lasting performance while complementing modern and traditional architecture alike. Whether for homes or commercial projects, we deliver innovative solutions that bring comfort, security, and elegance to every space. </p>
       
 

@@ -83,7 +83,7 @@ useEffect(()=>{
 
  <div className='d-flex flex-column flex-md-row  gap-1 ' style={{marginTop:'6%'}}>
         <div className='dyn a-img'>
-            <h2 className='text-center ' style={{marginTop:'10%', objectFit:'cover',wordSpacing:'1px',fontFamily:'Lato', fontWeight:'bold'}}>Window Innovations best fabricated </h2>
+            <h2 className='text-center ' style={{marginTop:'10%', objectFit:'cover',wordSpacing:'1px',fontFamily:'Lato', fontWeight:'bold'}}>Window Innovationz best fabricated </h2>
              <h3 className='text-center p-1' style={{ objectFit:'cover',fontFamily:'Lato',wordSpacing:'1px', fontWeight:'bold'}}>uPVC & Aluminium
 Widows Doors System</h3>
             <p className='p-3 mt-3 mx-4 ' style={{wordSpacing :'0px',fontFamily:'Lato', textAlign:'justify', lineHeight:'35px'}}>We specialize in premium uPVC and Aluminium windows and doors that combine durability, elegance, and modern functionality. From our manufacturing facility in the Rawat Industrial Area, our foreign-qualified technicians produce premium windows and doors with unmatched benefits: superior sound insulation (30–40 dB reduction), excellent energy efficiency, complete termite resistance, 20–35 year durability, minimal maintenance requirements, and enhanced fire safety.
@@ -104,7 +104,7 @@ Our product range includes casement windows, sliding systems, tilt & turn window
             <h2 className='text-center ' style={{wordSpacing:'1px',marginTop:'10%', objectFit:'cover',fontFamily:'Lato', fontWeight:'bold'}}>Mission Statement</h2>
              
             <p className='p-3 mt-3 mx-4' style={{ wordSpacing:'1px',fontFamily:'Lato', textAlign:'justify', lineHeight:'35px'}}>
-              At Window Innovations, our mission is to redefine modern living and working spaces by delivering premium-quality uPVC and Aluminium window and door systems. With a focus on durability, energy efficiency, and cutting-edge design, we create solutions that enhance comfort, security, and style. We are committed to providing low-maintenance, eco-friendly products that meet the demands of both residential and commercial projects while contributing to a more sustainable future.
+              At Window Innovationz, our mission is to redefine modern living and working spaces by delivering premium-quality uPVC and Aluminium window and door systems. With a focus on durability, energy efficiency, and cutting-edge design, we create solutions that enhance comfort, security, and style. We are committed to providing low-maintenance, eco-friendly products that meet the demands of both residential and commercial projects while contributing to a more sustainable future.
             </p>
            
         </div>
@@ -112,7 +112,7 @@ Our product range includes casement windows, sliding systems, tilt & turn window
             <h2 className='text-center ' style={{marginTop:'10%', wordSpacing:'1px',objectFit:'cover',fontFamily:'Lato', fontWeight:'bold'}}>Vision Statement</h2>
              
             <p className='p-3 mt-3 mx-4' style={{ wordSpacing:'0px',fontFamily:'Lato', textAlign:'justify', lineHeight:'35px'}}>
-              Our vision is to become the most trusted name in uPVC and Aluminium window and door fabrication. By combining advanced technology with expert craftsmanship, we aim to set new benchmarks for quality, innovation, and customer satisfaction. Window Innovations aspires to transform architecture across Pakistan, offering products that deliver long-lasting performance, superior insulation, and timeless elegance.
+              Our vision is to become the most trusted name in uPVC and Aluminium window and door fabrication. By combining advanced technology with expert craftsmanship, we aim to set new benchmarks for quality, innovation, and customer satisfaction. Window Innovationz aspires to transform architecture across Pakistan, offering products that deliver long-lasting performance, superior insulation, and timeless elegance.
             </p>
            
         </div>

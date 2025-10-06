@@ -8,10 +8,10 @@ const Skylet = () => {
 { img:'images/s5.jpg'}
     ]
 
-      const head='uPVC GLASS SKYLIGHT '
-    const para='At Window Innovations, we design and fabricate high-quality uPVC skylights, crafted with high-quality glass and durable uPVC frames. Designed for roofs and ceilings, skylights enhance brightness, improve ventilation, and add a modern architectural touch to your home or office in Islamabad. Our uPVC skylights are the perfect solution for natural light and fresh air, combining durability with elegant design. Installing skylights is one of the most effective ways to brighten interiors, improve airflow, and reduce reliance on artificial lighting, making your spaces more energy-efficient and comfortable. Whether for a residential home, office, or commercial project in Islamabad, our skylights provide a sleek architectural feature that enhances both functionality and style.'
+      const head='GLASS SKYLIGHT '
+    const para='At Window Innovationz, we design and fabricate high-quality skylights, crafted with high-quality glass and durable frames. Designed for roofs and ceilings, skylights enhance brightness, improve ventilation, and add a modern architectural touch to your home or office in Islamabad. Our skylights are the perfect solution for natural light and fresh air, combining durability with elegant design. Installing skylights is one of the most effective ways to brighten interiors, improve airflow, and reduce reliance on artificial lighting, making your spaces more energy-efficient and comfortable. Whether for a residential home, office, or commercial project in Islamabad, our skylights provide a sleek architectural feature that enhances both functionality and style.'
     const img= '/images/s1.jpg'
-const p='Why Choose uPVC Skylight from Islamabad uPVC Windows & Doors?'
+const p='Why Choose Glass Skylight from Window Innovationz uPVC Windows & Doors?'
 
     const h = [
   "We take pride in delivering the highest quality workmanship in every project. Our skilled professionals use the finest materials and construction techniques to ensure that every conservatory, skylight, or installation is durable, visually appealing, and long-lasting.",

@@ -8,10 +8,10 @@ const Glasswin = () => {
 { img:'images/aw1.jpeg'}
     ]
 
-      const head='uPVC Glass Windows'
+      const head='uPVC Openable Windows'
     const para=' uPVC and Aluminium glass openable windows offer a sleek, space-saving solution with smooth, effortless operation. Designed with uPVC and Aluminium frames, they provide excellent insulation, durability, and low maintenance. Ideal for modern homes and commercial spaces, these windows maximize natural light, enhance ventilation, and add a clean, contemporary aesthetic to any interior or exterior setting. Crafted with durable uPVC or aluminium frames, they deliver outstanding insulation, weather resistance, and long-term durability while requiring minimal maintenance. Their versatility allows for improved ventilation, abundant natural light, and enhanced energy efficiency, ensuring year-round comfort and performance.Our uPVC and Aluminium glass openable windows are designed to combine modern aesthetics with superior functionality.'
     const img= '/images/win.jpg'
-    const p='Why Choose uPVC Openable Windows from Islamabad uPVC Windows & Doors?'
+    const p='Why Choose uPVC Openable Windows from Window Innovationz uPVC Windows & Doors?'
 
     const h = [
   "uPVC is resistant to moisture, termites, and rust, which means the windows maintain their shape and quality for years without frequent repairs or replacements.",

@@ -70,4 +70,18 @@ width: 35%;
 margin-top: 4%;
 margin-left: 5%;
 }
+
+
+
+}
+.selected-services {
+  white-space: nowrap;     /* don’t wrap text */
+  overflow: hidden;        /* cut off extra text */
+  text-overflow: ellipsis; /* add "..." if text is too long */
+}
+/* Form.css */
+.serwid {
+  width: 250px;           /* fixed width */
+  min-width: 200px;       /* optional, keeps layout stable */
+  max-width: 250px;       /* prevent growth */
 }

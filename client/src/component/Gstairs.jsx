@@ -8,9 +8,9 @@ const Gstairs = () => {
 { img:'images/stairs1.jpg'}
     ]
       const head='GLASS STAIRS RAILING'
-    const para='At Window Innovations, we design and fabricate high-quality glass stairs are a modern architectural statement, designed to add openness, light, and elegance to any space. Crafted with premium tempered glass and robust fittings, they offer the perfect balance of safety, durability, and contemporary style. Whether for homes, offices, or commercial spaces, glass stairs create a sleek and spacious look that enhances both functionality and aesthetics. Perfect for homes, offices, and commercial spaces, our glass stairs redefine interiors with a bold, modern edge. Combining transparency with strength, they create a striking visual feature that is both safe and stylish. The transparency of glass stairs creates a sense of spaciousness and light flow, making them ideal for homes, offices, and commercial environments seeking a sleek.'
-    const img= '/images/sta2.jpg'
-   const p='Why Choose Glass Stairs Railing from Islamabad uPVC Windows & Doors?'
+    const para='At Window Innovationz, we design and fabricate high-quality glass stairs are a modern architectural statement, designed to add openness, light, and elegance to any space. Crafted with premium tempered glass and robust fittings, they offer the perfect balance of safety, durability, and contemporary style. Whether for homes, offices, or commercial spaces, glass stairs create a sleek and spacious look that enhances both functionality and aesthetics. Perfect for homes, offices, and commercial spaces, our glass stairs redefine interiors with a bold, modern edge. Combining transparency with strength, they create a striking visual feature that is both safe and stylish. The transparency of glass stairs creates a sense of spaciousness and light flow, making them ideal for homes, offices, and commercial environments seeking a sleek.'
+    const img= '/images/gst.jpg'
+   const p='Why Choose Glass Stairs Railing from Window Innovationz uPVC Windows & Doors?'
     const h=[
   "Glass stairs add a striking modern aesthetic to homes and commercial spaces, creating a sense of openness and elegance.",
   "Made with toughened or laminated glass, they are designed to handle heavy loads while ensuring safety and durability.",

@@ -8,20 +8,20 @@ const Contact = ({img,ch}) => {
  const [loading, setLoading] = useState(false);
   const services = [
     "uPVC Doors",
-    "uPVC Windows",
-    "uPVC Skylet",
+   
+     "uPVC Windows",
+    
+    "uPVC Skylight",
     "uPVC Ventilator",
-    "uPVC Stairs",
-    "uPVC Railing",
-    "uPVC Shower Caben",
+    "Glass Stairs Railing",
+    "Glass Terrace Railing",
+    "Glass Shower Caben",
   ];
 
   const onSubmit= async(e)=>{
     
     setLoading(true); 
     try{
-
-    
     const res= await fetch('http://localhost:5000/fillCon', {
       method:'POST',
       headers:{
@@ -34,12 +34,18 @@ const Contact = ({img,ch}) => {
     if(res.ok){
      
       alert('Form submitted  successfully!');
-      reset()
-     
+    reset({
+        name: "",
+        email: "",
+        phone: "",
+        comment: "",
+        services: [],}); // ✅ reset services field
+      setOpen(false);       ;
     }
     else{
+       alert("Submission failed: " + result.message);
   //   it call server side error 
-  alert(result.message );
+ // alert(result.message );
  // reset()
   
     }
@@ -110,7 +116,7 @@ const Contact = ({img,ch}) => {
   >
 
     <div
-  className="form-control mt-3 selected-services"
+  className="form-control mt-3 selected-services serwid"
   style={{
 
     cursor: "pointer",
@@ -134,7 +140,7 @@ const Contact = ({img,ch}) => {
     style={{
       zIndex: 10,
       maxHeight: "150px",
-      overflowY: "hidden",
+      overflowY: "auto",
       width: "100%",
     }}
   >

@@ -9,9 +9,9 @@ const Grail = () => {
     ]
 
       const head='GLASS TERRACE RAILING'
-    const para='At Window Innovations, we design and fabricate high-quality glass terrace railings that bring a modern, elegant touch to your exteriors. Our durable and weather-resistant railings ensure safety without compromising style, making them ideal for balconies, staircases, and terraces in Islamabad homes and commercial spaces. ur uPVC glass railings combine strength, elegance, and modern design. Perfect for balconies, staircases, and terraces, they provide a clear, open view while maintaining maximum safety. With durable uPVC frames and tempered glass, these railings resist weather, corrosion, and wear making them a long-lasting choice for homes and businesses in Islamabad.'
+    const para='At Window Innovationz, we design and fabricate high-quality glass terrace railings that bring a modern, elegant touch to your exteriors. Our durable and weather-resistant railings ensure safety without compromising style, making them ideal for balconies, staircases, and terraces in Islamabad homes and commercial spaces. ur uPVC glass railings combine strength, elegance, and modern design. Perfect for balconies, staircases, and terraces, they provide a clear, open view while maintaining maximum safety. With durable uPVC frames and tempered glass, these railings resist weather, corrosion, and wear making them a long-lasting choice for homes and businesses in Islamabad.'
     const img= '/images/gr1.jpg'
-   const p='Why Choose Glass Railing from Islamabad uPVC Windows & Doors?'
+   const p='Why Choose Glass Railing from Window Innovationz uPVC Windows & Doors?'
   const h=[
   "Glass railings provide a sleek and modern look, enhancing the aesthetics of balconies, staircases, and terraces.",
   "The use of toughened or laminated safety glass ensures durability and minimizes the risk of breakage.",

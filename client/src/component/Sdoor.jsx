@@ -11,7 +11,7 @@ const Sdoor = () => {
       const head='uPVC SLIDING GLASS DOORS'
     const para='Our sliding glass doors create a seamless connection between indoor and outdoor spaces, offering smooth operation, abundant natural light, and a modern aesthetic. Built with durable uPVC or Aluminium frames, they provide excellent insulation, easy maintenance, and a stylish solution that enhances both functionality and elegance in any setting. Crafted with durable uPVC or aluminium frames and fitted with high-quality glass, our sliding doors are built for long-lasting performance. They provide excellent insulation to keep interiors comfortable in every season, while their low-maintenance design ensures they remain as stylish and functional as the day they were installed.'
     const img= '/images/sd1.gif'
-     const p='Why Choose uPVC Sliding Doors from Islamabad uPVC Windows & Doors?'
+     const p='Why Choose uPVC Sliding Doors from Window Innovationz uPVC Windows & Doors?'
    const h=[
   "Our uPVC Sliding Glass Doors create a seamless connection between indoor and outdoor spaces, offering smooth operation, abundant natural light, and a modern aesthetic.",
   

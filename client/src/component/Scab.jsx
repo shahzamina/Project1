@@ -8,9 +8,9 @@ const Gscab = () => {
 { img:'images/sc4.jpeg'}
     ]
       const head='GLASS SHOWER CABIN'
-    const para='At Window Innovations, we specialize in premium Glass Shower Cabins that combine modern design with durability. Our fabricated cabins are crafted to provide a sleek, waterproof, and hygienic solution for bathrooms, ensuring both style and functionality. Located in Islamabad, we offer customized sizes and designs to perfectly fit your space, delivering comfort, elegance, and long-lasting performance. The transparency of glass stairs introduces a sense of openness, allowing natural light to flow freely and creating brighter, more spacious interiors. Ideal for homes, offices, and commercial spaces aiming for a sleek and contemporary aesthetic, these stairs are engineered with precision to deliver not only stunning visual appeal but also lasting strength, stability, and safety.'
+    const para='At Window Innovationz, we specialize in premium Glass Shower Cabins that combine modern design with durability. Our fabricated cabins are crafted to provide a sleek, waterproof, and hygienic solution for bathrooms, ensuring both style and functionality. Located in Islamabad, we offer customized sizes and designs to perfectly fit your space, delivering comfort, elegance, and long-lasting performance. The transparency of glass stairs introduces a sense of openness, allowing natural light to flow freely and creating brighter, more spacious interiors. Ideal for homes, offices, and commercial spaces aiming for a sleek and contemporary aesthetic, these stairs are engineered with precision to deliver not only stunning visual appeal but also lasting strength, stability, and safety.'
     const img= '/images/sc2.jpg'
-const p='Why Choose Glass Shower Cabins from Islamabad uPVC Windows & Doors?'
+const p='Why Choose Glass Shower Cabins from Window Innovationz uPVC Windows & Doors?'
    const h=[
   "Our shower cabins are crafted with both elegance and functionality in mind. They come in a wide range of designs — from sleek, frameless, and minimalist cabins for a modern look, to more detailed and decorative options for those who prefer a classic feel. With options in glass finishes, frame colors, and handle styles, you can choose a design that blends seamlessly with your bathroom’s existing décor while also adding a touch of luxury.",
   

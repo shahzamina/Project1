@@ -10,7 +10,7 @@ const Gdoor = () => {
   const head='uPVC OPENABLE GLASS DOORS'
     const para='Our openable uPVC and Aluminium glass doors combine modern design with superior functionality. Crafted for durability, energy efficiency, and ease of use, these doors allow smooth ventilation and natural light while ensuring security and insulation. Perfect for homes and commercial spaces, they bring elegance, practicality, and long-lasting performance to any interior or exterior setting. Our openable UPVC and Aluminium glass doors combine modern design with superior functionality. Crafted for durability, energy efficiency, and ease of use, these doors allow smooth ventilation and natural light while ensuring security and insulation. Perfect for homes and commercial spaces, they bring elegance, practicality, and long-lasting performance to any interior or exterior setting' 
     const img= '/images/gd4.jpg'
-     const p='Why Choose uPVC Openable Doors from Islamabad upvc Windows & Doors?'
+     const p='Why Choose uPVC Openable Doors from Window Innovationz upvc Windows & Doors?'
 
     const h =[
   "uPVC is an excellent insulator, making it an ideal choice for doors. With superior thermal performance and reduced heat transfer, your home stays comfortable year-round while helping you save on energy bills.",

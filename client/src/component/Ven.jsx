@@ -9,9 +9,9 @@ const Ven = () => {
     ]
 
       const head='uPVC GLASS VENTILATOR'
-    const para='At Window Innovations, we design and fabricate high-quality uPVC top-hung ventilators are designed to provide excellent ventilation while maintaining energy efficiency and security. These windows open outward from the top, allowing fresh air to circulate without compromising privacy or safety. Built with high-quality uPVC and durable hardware. Ensure fresh air and comfort with our uPVC top-hung ventilators, offering smooth operation, durability, and excellent airflow control. Crafted from high-grade uPVC profiles and long-lasting hardware, our ventilators are resistant to corrosion, weathering, and termites—making them a low-maintenance yet high-performance solution. The airtight sealing helps in minimizing noise and dust infiltration, while the sturdy locking mechanisms enhance safety and security.'
+    const para='At Window Innovationz, we design and fabricate high-quality uPVC top-hung ventilators are designed to provide excellent ventilation while maintaining energy efficiency and security. These windows open outward from the top, allowing fresh air to circulate without compromising privacy or safety. Built with high-quality uPVC and durable hardware. Ensure fresh air and comfort with our uPVC top-hung ventilators, offering smooth operation, durability, and excellent airflow control. Crafted from high-grade uPVC profiles and long-lasting hardware, our ventilators are resistant to corrosion, weathering, and termites—making them a low-maintenance yet high-performance solution. The airtight sealing helps in minimizing noise and dust infiltration, while the sturdy locking mechanisms enhance safety and security.'
     const img= '/images/ven10.webp'
-    const p='Why Choose uPVC Ventilator from Islamabad uPVC Windows & Doors?'
+    const p='Why Choose uPVC Ventilator from Window Innovationz uPVC Windows & Doors?'
   const h=[
   "Top-hung glass ventilators are designed to open outward from the top, allowing fresh air to circulate while maintaining security and privacy.",
   "Made with high-quality glass and durable uPVC or aluminium frames, ensuring long-lasting performance and minimal maintenance.",
